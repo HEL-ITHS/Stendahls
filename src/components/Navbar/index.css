@@ -1,5 +1,12 @@
-.navbar {
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
   &:hover {
-    background-color: red;
+    text-decoration: underline;
   }
 }

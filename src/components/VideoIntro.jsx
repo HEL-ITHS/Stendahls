@@ -1,5 +1,12 @@
+import video from "../../assets/video.png"
+
 function VideoIntro () {
-  return <></>
+  return <>
+  <img
+    src={ video }
+    style={{ width: "100%", height: "auto" }}
+  />
+  </>
 }
 
 export default VideoIntro
