@@ -1,10 +1,5 @@
-
 .navbar {
   &:hover {
     background-color: red;
   }
-}
-
-.form {
-  border-radius: 100px;;
 }
