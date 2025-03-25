@@ -11,17 +11,17 @@ function Navbar() {
       <a href="/">
         <img
           src={logo}
-          style={{ width: "25%", height: "auto", marginTop: "15px", alignSelf: "left" }}>
+          style={{ width: "25%", height: "auto", marginTop: "15px" }}>
         </img>
       </a>
       <nav>
         <button onClick={() => setIsOpen(!isOpen)}><img
           src={menyClosed}
-          style={{ width: "25%", height: "auto", marginTop: "15px", alignSelf: "right" }}>
+          style={{ width: "15%", height: "auto", marginTop: "15px", alignSelf: "right"}}>
         </img></button>
-        <ul className={`${isOpen? "block" : "hidden"}`}>
+        <ul className={`nav-menu ${isOpen ? "open" : ""}`}>
             <form>
-              <input type="search"></input>
+              <input className="searchbar" type="search"></input>
             </form>
             <li>
             <a href="/">Services</a>
