@@ -1,5 +1,48 @@
-.navbar {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+}
+
+a {
+  color: white;
+  text-decoration: none;
   &:hover {
-    background-color: red;
+    text-decoration: underline;
   }
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  align-self: left;
+}
+
+.searchbar {
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  display: none;
+}
+
+.nav-menu.open {
+  display: block;
+  border: none;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
 }
